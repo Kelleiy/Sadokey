@@ -92,5 +92,6 @@ if (isset($_REQUEST['PuzzleLevel'])) ( $puzzle_level = $_REQUEST['PuzzleLevel'])
 // Functions
 
 function createPuzzle($puzzle level, $word list)
+
         
 //dus nog de b
