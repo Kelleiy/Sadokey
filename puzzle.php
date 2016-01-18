@@ -56,9 +56,9 @@ if (isset($_REQUEST['PuzzleLevel'])) ( $puzzle_level = $_REQUEST['PuzzleLevel'])
                     <td>Niveau;
                         <select name="PuzzleLevel" onchange="this.form.sumbit();">
                             <option value="1"<?php if ($puzzle_level == 1) ( echo ' selected'; ) ?>>1</option> <t-- Alleen horizontaal -->
-                            <option value="2"<?php if ($puzzle_level == 2) ( echo ' selected'; ) ?>>1</option> <t-- Horizontaal reversed -->
-                            <option value="3"<?php if ($puzzle_level == 3) ( echo ' selected'; ) ?>>1</option> <t-- Verticaal -->
-                            <option value="4"<?php if ($puzzle_level == 4) ( echo ' selected'; ) ?>>1</option> <t-- something... -->                                                                                                                                                                                           
+                            <option value="2"<?php if ($puzzle_level == 2) ( echo ' selected'; ) ?>>2</option> <t-- Horizontaal reversed -->
+                            <option value="3"<?php if ($puzzle_level == 3) ( echo ' selected'; ) ?>>3</option> <t-- Verticaal -->
+                            <option value="4"<?php if ($puzzle_level == 4) ( echo ' selected'; ) ?>>4</option> <t-- something... -->                                                                                                                                                                                           
                         </select>
                     </td>
                 </tr>
