@@ -6,19 +6,92 @@
             <style>
                 table, body
                 {
-                    font-family: Arial;
+                    font-family: Arial;           
                 }
-
                 table.puzzle
                 {
                     border: solid 1px black;
                 }
-
-                table.puzzle td
-                {}
-
+                    table.puzzle td
+                {
+                    border: solid 1px black;
+                    width: 25px;
+                    height: 25px;
+                    vertical-align: middle;
+                    text-align: center;
+                    padding: 0;
+                    cursor: default;
+                }
+                table.puzzle label
+                {
+                    width: 100%;
+                    height: 100%;
+                    margin: 0;
+                    padding-top: 2px;
+                    display: block;
+                    cursor: pointer;
+                }
+                table.puzzle label.on
+                {
+                    background-color: silver;
+                }
+                table.puzzle label.active
+                {
+                    background-color: grey;
+                    color: white;
+                }
+                table.puzzle label.off
+                {
+                    background-color: white;
+                }
+                fieldset label
+                {
+                    cursor: pointer;
+                    clear: both;
+                    float: left;
+                }
+                fieldset label.on
+                {
+                    text-decoration: underline;
+                }
+                fieldset label.active
+                {
+                    text-decoration: line-through;
+                }
+                fieldset label.off
+                {
+                    text-decoration: none;
+                }
+                b.error
+                {
+                color: red;
+                }
             </style>
             <script>
+                var highlightWord = function(word, clicked)
+                {
+                    var _labels = document.getElementsByTagName('LABEL');
+                    var i = 0;
+                    var j = _labels.length;
+                    while (i < j)
+                    {
+                        if (_labels[i].title == word)
+                        {
+                            if (clicked) {
+                                _labels[i].className = 'active';
+                            }
+                            else if (_labels[i].className != 'active')
+                            {
+                                _labels[i].className = 'on';
+                            }
+                        }
+                        else if (_labels[i].className != 'active')
+                        {
+                            _labels[i].className = 'off';
+                        }
+                        i++;
+                    }
+                }
             </script>
     </head>
     <body>
@@ -45,11 +118,11 @@
                     <td>
                         <fieldset>
                             <legend>Woordenlijst</legend>
-                                <?php
+                                <?php   
                                     foreach ($word_list as $word)
                                     {
-                                            $label_tag = '<label title="' . $word . '" onclick="highlightWordt(\'' . $word . '\', true);" onmousover="highlightWord(\'' . $word . '\', false);" onmouseout="highlightWord(\'\', false);">';
-                                            echo $label_tag . $word . '</label>';
+                                        $label_tag = '<label title="' . $word . '" onclick="highlightWord(\'' . $word . '\', true);" onmouseover="highlightWord(\'' . $word . '\', false);" onmouseout="highlightWord(\'\', false);">';
+                                        echo $label_tag . $word . '</label>';
                                     }
                                 ?>
                         </fieldset>
