@@ -1,4 +1,5 @@
 <?php
+
 define('alphabet', "abcdefghijklmnopqrstuvwxyz");
 define('puzzle_breedte', 20);
 define('puzzle_hoogte', 20);
