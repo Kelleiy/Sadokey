@@ -5,7 +5,7 @@ define('puzzle_hoogte', 20);
 $word_list = array(
         'bergkat',
         'steenbok',
-        'stekelvarken',
+        'stekelvarken', 
         'everzwijn',
         'giraf',
         'pauw',
