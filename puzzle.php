@@ -50,7 +50,7 @@ if (isset($_REQUEST['PuzzleLevel'])) ( $puzzle_level = $_REQUEST['PuzzleLevel'])
             </script>
     </head>
     <body>
-        <form method="get">
+        <form method="get">  
             <table>
                 <tr>
                     <td>Niveau;
