@@ -6,7 +6,7 @@ $word_list = array(
         'bergkat',
         'steenbok',
         'stekelvarken', 
-        'everzwijn',
+        'everzwijn', 
         'giraf',
         'pauw',
         'neushoorn',
