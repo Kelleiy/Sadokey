@@ -32,6 +32,14 @@ if (isset($_REQUEST['PuzzleLevel'])) ( $puzzle_level = $_REQUEST['PuzzleLevel'])
 //##### Functions #####
 //#####################
 
+function naarTabel($word_list) {
+       foreach ($word_list as $word)
+                                    {
+                                        $label_tag = '<label title="' . $word . '" onclick="highlightWord(\'' . $word . '\', true);" onmouseover="highlightWord(\'' . $word . '\', false);" onmouseout="highlightWord(\'\', false);">';
+                                        echo $label_tag . $word . '</label>';
+                                    }
+}
+
 function createPuzzle($puzzle_level, $word_list)
 
 {
