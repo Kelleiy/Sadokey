@@ -8,4 +8,12 @@
 echo ";;";
 include "puzzle.php";
 
+naarTabel($word_list);
+createPuzzle($puzzle_level, $word_list);
+createPuzzleTable($data);
+fillRandomLetters($data);
+prepareData();
+getRandomLetter();
+getRandomStartPosition($word, $level);
+hasOverlap($data, $word, $position);
 losLevelOp();
