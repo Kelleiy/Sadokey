@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html> 
     <head>
         <title>Woordzoeker</title>
             <link rel="stylesheet" href="csspuzzel.css">
