@@ -17,3 +17,5 @@ getRandomLetter();
 getRandomStartPosition($word, $level);
 hasOverlap($data, $word, $position);
 losLevelOp();
+
+?>
