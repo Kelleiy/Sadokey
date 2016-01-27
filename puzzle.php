@@ -43,7 +43,7 @@ function naarTabel($word_list) {
 function createPuzzle($puzzle_level, $word_list)
 
 {
-    //Grid data voor de puzzel
+    // data voor de puzzel
     $data = prepareData();
 
     //Vervang nulletjes met letters van de woorden, hangt af van het level
