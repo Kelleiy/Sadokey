@@ -45,9 +45,7 @@
                 <tr>
                     <td>
                         <?php
-                            echo "alive";
                             include "puzzle.php";
-
                             
                             $s = createPuzzle($puzzle_level, $word_list);
                             echo $s;
@@ -56,7 +54,6 @@
                             //getRandomStartPosition($word, $level);
                             //hasOverlap($data, $word, $position);
                             //losLevelOp();
-
                         ?>
                     </td>
                 </tr>
