@@ -383,8 +383,4 @@ class Position
     }
 }
 
-function losLevelOp() {
-    echo "ja, goed he";
-}
-
 ?>
