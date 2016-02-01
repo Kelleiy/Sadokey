@@ -27,7 +27,7 @@ table.puzzle label
     }
 table.puzzle label.on
     {
-        background-color: silver;
+        background-color: red;
     }
 table.puzzle label.active
     {
