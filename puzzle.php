@@ -3,6 +3,7 @@
 define('alphabet', "abcdefghijklmnopqrstuvwxyz");
 define('puzzle_breedte', 20);
 define('puzzle_hoogte', 20);
+define('puzzle_height', puzzle_hoogte);
 $word_list = array(
         'bergkat',
         'steenbok',
@@ -45,6 +46,7 @@ function createPuzzle($puzzle_level, $word_list)
 {
     // data voor de puzzel
     $data = prepareData();
+    fillRandomLetters($data);
 
     //Vervang nulletjes met letters van de woorden, hangt af van het level
     foreach ($word_list as $word)
@@ -59,7 +61,7 @@ function createPuzzle($puzzle_level, $word_list)
             if ($has_overlap)
             {
                 $pos = getRandomStartPosition($word, $puzzle_level);
-                if ($retry == (puzzle_height * puzzle_width))
+                if ($retry == (puzzle_height * puzzle_breedte))
                 {
                     $has_overlap = false;
                     $skip_entry = true;
@@ -147,7 +149,7 @@ function createPuzzle($puzzle_level, $word_list)
 
 }
 
-function createPuzzleTable($data)
+function createPuzzleTable(Array $data)
 {
     $response = '<table class="puzzle">';
     $i = 0;
@@ -167,7 +169,7 @@ function fillRandomLetters($data)
     while ($row < puzzle_height)
     {
         $column = 0;
-        while ($column < puzzle_width)
+        while ($column < puzzle_breedte)
         {
             if ($data[$row][$column] == '0')
             {
@@ -188,7 +190,7 @@ function prepareData()
     while ($row < puzzle_height)
     {
         $column = 0;
-        while ($column < puzzle_width)
+        while ($column < puzzle_breedte)
         {
             $data[$row][$column] = '0';
             $column++;
@@ -233,20 +235,20 @@ function getRandomStartPosition($word, $level)
             case DIRECTION::HORIZONTAL:
             case DIRECTION::HORIZONTAL_REVERSED:
             {
-                $max_right = (puzzle_width - strlen($word));
+                $max_right = (puzzle_breedte - strlen($word));
                 $max_bottom = puzzle_height - 1;
                 break;
             }
             case DIRECTION::VERTICAL:
             {
-                $max_right = puzzle_width - 1;
+                $max_right = puzzle_breedte - 1;
                 $max_bottom = (puzzle_height - strlen($word));
                 break;
             }
             case DIRECTION::DIAGONAL_TOP:
             case DIRECTION::DIAGONAL_BOTTOM:
             {
-                $max_right = (puzzle_width - strlen($word)) - 1;
+                $max_right = (puzzle_breedte - strlen($word)) - 1;
                 $max_bottom = (puzzle_height - strlen($word)) - 1;
                 break;
             }
@@ -267,7 +269,7 @@ function hasOverlap($data, $word, $position)
         {
             $i = $position->column;
             $j = $position->column + strlen($word);
-            if ($j >= puzzle_width)
+            if ($j >= puzzle_breedte)
             {
                 $overlap_count++;
             }
@@ -310,7 +312,7 @@ function hasOverlap($data, $word, $position)
             $i = $position->column;
             $j = $position->column + strlen($word);
             $row_count = 0;
-            if ($j >= puzzle_width)
+            if ($j >= puzzle_breedte)
             {
                 $overlap_count++;
             }
@@ -333,7 +335,7 @@ function hasOverlap($data, $word, $position)
             $i = $position->column;
             $j = $position->column + strlen($word);
             $row_count = 0;
-            if ($j >= puzzle_width)
+            if ($j >= puzzle_breedte)
             {
                 $overlap_count++;
             }
@@ -379,6 +381,10 @@ class Position
         $this->max_top = $max_top;
         $this->max_bottom = $max_bottom;
     }
+}
+
+function losLevelOp() {
+    echo "ja, goed he";
 }
 
 ?>
