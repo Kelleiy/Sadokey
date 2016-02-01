@@ -53,10 +53,7 @@
                             //getRandomLetter();
                             //getRandomStartPosition($word, $level);
                             //hasOverlap($data, $word, $position);
-                            //losLevelOp();        
-                            //Het puzzel level
-                                $puzzle_level = 1;
-                                if (isset($_REQUEST['PuzzleLevel']) ? $puzzle_level = $_REQUEST['PuzzleLevel']: ''); 
+                            //losLevelOp();
                 ?>
                     </td>
                 </tr>

@@ -25,12 +25,9 @@ $word_list = array(
         'salamander',
 );
 
-<<<<<<< HEAD
-=======
 //Het puzzel level
 $puzzle_level = 1;
 if (isset($_REQUEST['PuzzleLevel'])) ( $puzzle_level = $_REQUEST['PuzzleLevel']); 
->>>>>>> 00d510d07807fa2dbf212c94dd50b9da3753f775
 
 //#####################
 //##### Functions #####
