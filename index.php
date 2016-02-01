@@ -33,7 +33,7 @@
         <form method="get">  
             <table>
                 <tr>
-                    <td>Niveau;
+                    <td>Niveau
                         <select name="PuzzleLevel" onchange="this.form.sumbit();">
                             <option value="1"<?php if ($puzzle_level == 1) { echo ' selected'; } ?>>1</option> <!-- Alleen horizontaal -->
                             <option value="2"<?php if ($puzzle_level == 2) { echo ' selected'; } ?>>2</option> <!-- Horizontaal reversed -->
