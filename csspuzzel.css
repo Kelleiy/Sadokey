@@ -31,7 +31,7 @@ table.puzzle label.on
     }
 table.puzzle label.active
     {
-        background-color: red;
+        background-color: grey;
         color: white;
     }
 table.puzzle label.off
