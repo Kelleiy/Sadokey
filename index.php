@@ -48,7 +48,7 @@
                             echo "alive";
                             include "puzzle.php";
 
-                            naarTabel($word_list);
+                            
                             $s = createPuzzle($puzzle_level, $word_list);
                             echo $s;
                             //createPuzzleTable($data);
