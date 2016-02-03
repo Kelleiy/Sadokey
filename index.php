@@ -53,7 +53,7 @@
                             //getRandomLetter();
                             //getRandomStartPosition($word, $level);
                             //hasOverlap($data, $word, $position);
-                ?>
+                        ?>
                     </td>
                 </tr>
                 <tr>
