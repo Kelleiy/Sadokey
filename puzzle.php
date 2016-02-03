@@ -15,7 +15,7 @@ $word_list = array(
         'leeuw',
         'zebra',
         'antilope',
-        'panter',
+        'panter', 
         'tijger',
         'hyena',
         'olifant',
