@@ -56,12 +56,12 @@
                         ?>
                     </td>
                 </tr>
-                <br/>
-                <br/>
                 <tr>
                     <td>
                         <fieldset>
                             <legend>Woordenlijst</legend>
+                            <br />
+                            <br />
                                 <?php
                                     echo naarTabel($word_list); 
                                 ?>
