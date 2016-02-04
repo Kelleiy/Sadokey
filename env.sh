@@ -8,4 +8,4 @@ phpunit=php.exe
 
 echo `pwd`/../lib/phpunit.phar
 phpunitPhar=`pwd`/../lib/phpunit.phar
-#phpunitPhar=/z/xampp/htdocs/sadokey3/phpunit.phar
+phpunitPhar=/z/xampp/htdocs/sadokey3/phpunit.phar
