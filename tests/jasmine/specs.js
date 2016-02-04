@@ -23,6 +23,7 @@ describe('hightlightWord', function () {
         console.log($('#fix').html());
         
         highlightWord("abc", false);
+        expect($('[title="abc"]').attr('class')).toBe('on');
         expect($('[title="xyz"]').attr('class')).toBe('off');
         expect($('[title="uio"]').attr('class')).toBe('off');
         
