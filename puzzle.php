@@ -28,6 +28,12 @@ $word_list = array(
         'salamander',
 );
 
+<<<<<<< HEAD
+=======
+//Het puzzel level
+$puzzle_level = 1;
+if (isset($_POST['PuzzleLevel'])) ( $puzzle_level = $_POST['PuzzleLevel']); 
+>>>>>>> 31976891a77006f1dd2fbcd84382bf552b3b30e1
 
 //#####################
 //##### Functions #####
