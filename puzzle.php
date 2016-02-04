@@ -1,8 +1,11 @@
 <?php
+for($i = 0; $i < 20; $i++) {
+    $wz[$i]= str_split("abcdefghjklmnopqrstv");
+}
 
 define('alphabet', "abcdefghijklmnopqrstuvwxyz");
-define('puzzle_breedte', 20);
-define('puzzle_hoogte', 20);
+define('puzzle_breedte', count($wz[0]));
+define('puzzle_hoogte', count($wz));
 define('puzzle_height', puzzle_hoogte);
 $word_list = array(
         'bergkat',
@@ -25,9 +28,6 @@ $word_list = array(
         'salamander',
 );
 
-//Het puzzel level
-$puzzle_level = 1;
-if (isset($_REQUEST['PuzzleLevel'])) ( $puzzle_level = $_REQUEST['PuzzleLevel']); 
 
 //#####################
 //##### Functions #####
