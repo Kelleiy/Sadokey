@@ -5,8 +5,7 @@ for($i = 0; $i < 20; $i++) {
 
 define('alphabet', "abcdefghijklmnopqrstuvwxyz");
 define('puzzle_breedte', count($wz[0]));
-define('puzzle_hoogte', count($wz));
-define('puzzle_height', puzzle_hoogte);
+define('puzzle_height', count($wz));
 $word_list = array(
         'bergkat',
         'steenbok', 
@@ -49,7 +48,7 @@ function createPuzzle($puzzle_level, $word_list)
     $data = prepareData();
     fillRandomLetters($data);
 
-    //Vervang nulletjes met letters van de woorden, hangt af van het level
+    //Vervang "-" met letters van de woorden, hangt af van het level
     foreach ($word_list as $word)
     {
         $pos = getRandomStartPosition($word, $puzzle_level);
