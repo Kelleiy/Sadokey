@@ -9,8 +9,7 @@ define('puzzle_hoogte', count($wz));
 define('puzzle_height', puzzle_hoogte);
 $word_list = array(
         'bergkat',
-        'steenbok',
-        'stekelvarken', 
+        'steenbok', 
         'everzwijn', 
         'giraf',
         'pauw',
@@ -25,15 +24,11 @@ $word_list = array(
         'kameel',
         'papegaai',
         'slang',
-        'salamander',
 );
 
-<<<<<<< HEAD
-=======
 //Het puzzel level
 $puzzle_level = 1;
-if (isset($_POST['PuzzleLevel'])) ( $puzzle_level = $_POST['PuzzleLevel']); 
->>>>>>> 31976891a77006f1dd2fbcd84382bf552b3b30e1
+if (isset($_POST['PuzzleLevel'])) ( $puzzle_level = $_POST['PuzzleLevel']);
 
 //#####################
 //##### Functions #####
