@@ -42,7 +42,7 @@ class HasOverlapTest extends PHPUnit_Framework_TestCase {
         $this->assertFalse($d, "4 should fit");
 
         $d = hasOverlap($data, $word, new P(0, 1, DIRECTION::HORIZONTAL_REVERSED));
-        $this->assertTrue($d, "revert 1 should not fit");
+        $this->assertTrue($d, "1 should not fit");
     }
 
 }
