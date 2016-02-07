@@ -2,31 +2,10 @@
     <head>
         <title>Woordzoeker</title>
             <link rel="stylesheet" href="csspuzzel.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
             <script>
-                var highlightWord = function(word, clicked)
-                {
-                    var _labels = document.getElementsByTagName('LABEL');
-                    var i = 0;
-                    var j = _labels.length;
-                    while (i < j)
-                    {
-                        if (_labels[i].title == word)
-                        {
-                            if (clicked) {
-                                _labels[i].className = 'active';
-                            }
-                            else if (_labels[i].className != 'active')
-                            {
-                                _labels[i].className = 'on';
-                            }
-                        }
-                        else if (_labels[i].className != 'active')
-                        {
-                            _labels[i].className = 'off';
-                        }
-                        i++;
-                    }
-                }
+                $(#file1).
+                
             </script>
     </head>
     <body>
@@ -37,8 +16,21 @@
 
         ?>
         
-        <form method="get">  
+        <form method="post" action="inlezen.php" enctype="multipart/form-data">  
             <table>
+                <tr>
+                    <td>file upload
+                        <input id="fileupload" type="file" name="puzzel" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="submit"  value="uploaden"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a id="file1" href=""> Click here for default puzzle </a></td>
+                </tr>                
                 <tr>
                     <td>Niveau
                         <select name="PuzzleLevel" onchange="this.form.sumbit();">
@@ -49,13 +41,13 @@
                         </select>
                     </td>
                 </tr>
-                <tr>
+<!--                <tr>
                     <td>
                         <?php
                             include "puzzle.php";
                             
-                            $s = createPuzzle($puzzle_level, $word_list);
-                            echo $s;
+                            //$s = createPuzzle($puzzle_level, $word_list);
+                            //echo $s;
                             //createPuzzleTable($data);
                             //getRandomLetter();
                             //getRandomStartPosition($word, $level);
@@ -68,11 +60,11 @@
                         <fieldset>
                             <legend>Woordenlijst</legend>
                                 <?php
-                                    echo naarTabel($word_list); 
+                                    //echo naarTabel($word_list); 
                                 ?>
                         </fieldset>
                     </td>
-                </tr>
+                </tr>-->
             </table>
         </form>
     
