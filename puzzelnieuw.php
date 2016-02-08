@@ -62,5 +62,5 @@ function createPuzzel($ruweregels){
 //}
 
 ?>
-</body>
+    </body>
 </html>
