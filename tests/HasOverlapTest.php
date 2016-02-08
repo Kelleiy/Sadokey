@@ -1,6 +1,6 @@
 <?php
 
-include_once 'puzzle.php';
+include_once 'puzzleoud.php';
 
 class P {
 
@@ -17,7 +17,7 @@ class P {
 
 }
 
-class HasOverlapTest extends PHPUnit_Framework_TestCase {
+class HasOverlap_TEST extends PHPUnit_Framework_TestCase {
 
     public function testHasOverlapHORIZONTAL() {
         // should have mocks 

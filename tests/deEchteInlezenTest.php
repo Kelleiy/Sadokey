@@ -1,20 +1,16 @@
 <?php
 
-function inlezenFake($fileName ) {
-    $ruweRegels = FILE($filename);
-}
-    foreach($ruweregels as $regel) {
-//    $regel = trim($regel);
-//    wz[] = str_split(....)
-//    woorden[] = $regel;
-    return array($wz, $woorden);
-}
+include_once 'deEchteInlezen.php';
 
-class DeEchteInlezenTest extends PHPUnit_Framework_TestCase {
+
+class InlezenTest extends PHPUnit_Framework_TestCase {
 
     public function testHasCreatedBothArrays() {
         // simple, included code has
-        $gelezenInvoer = inlezen('./tests/data/t0.txt');
+        $regels = FILE('./tests/data/t0.txt');
+        //$this->assertTrue(is_array($regels));
+        $gelezenInvoer = inlezen($regels);
+        //print_r($gelezenInvoer);
         
         
         // check if arrays have been made
@@ -33,8 +29,7 @@ class DeEchteInlezenTest extends PHPUnit_Framework_TestCase {
         
         $this->assertEquals(2, count($wz), '2 regels woordzoeker');
         $this->assertEquals(1, count($woorden), '1 woord te vinden');
-        $this->assertEquals(array(str_split('abc-g'), str_split('xyz--')), $wz);
+        $this->assertEquals(array(str_split('-ab--'), str_split('-----')), $wz);
         $this->assertEquals("ab", $woorden[0]);
     }
-
 }

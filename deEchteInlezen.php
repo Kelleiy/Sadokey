@@ -1,24 +1,31 @@
 <?php
 
-function inlezen(array $regels)  {
+function inlezen(array $regels) {
     $wz = array();
     $woorden = array();
     // eerrst de wz
-    foreach($regels as $regel) {
+    foreach ($regels as $regel) {
         $d = str_split(trim($regel));
         // klasr als lege regel
-        if (count($d) <= 1) break; // verlaat lus
-        $wz[]= $d;
+        if (count($d) <= 1)
+            break; // verlaat lus
+        $wz[] = $d;
     }
     // nu de woorden vinden
-    foreach($regels as $regel) {
-        if (
-                $noggeenlegeregel) continue; // volgende iteratie
-        $woorden[] = trim($regel);
+    $nogGeenLegeRegel = true;  // proper camelcase name 
+    foreach ($regels as $regel) {
+        $w = trim($regel);
+        if ($nogGeenLegeRegel) {
+            print strlen($w);
+            if (strlen($w) < 1) {
+                $nogGeenLegeRegel = false;
+            }
+            continue; // volgende iteratie
+        }
+        $woorden[] = $w;
     }
-    
+
     return array($wz, $woorden);
 }
-
 
 //inlezen($ruweregels);
