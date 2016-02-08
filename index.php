@@ -5,23 +5,23 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     </head>
     <body>
-<<<<<<< HEAD
+
         <form method="get">  
             <table>  
-=======
+
         <?php
             //Het puzzel level
             $puzzle_level = 1;
             if (isset($_REQUEST['PuzzleLevel'])) ( $puzzle_level = $_REQUEST['PuzzleLevel']); 
 
-<<<<<<< HEAD
+
         ?>               
-=======
+
         ?>
         
         <form method="post" action="inlezen.php" enctype="multipart/form-data">  
             <table>
->>>>>>> a69e02d0670c0ceaf2f79aea0faaff2bb0b96073
+
                 <tr>
                     <td>file upload
                         <input id="fileupload" type="file" name="puzzel" />
@@ -35,7 +35,7 @@
                 <tr>
                     <td><a id="file1" href=""> Click here for default puzzle </a></td>
                 </tr>                
->>>>>>> 8eb09c50ea76bb70b86b61d1481aea88c6d0cc92
+
                 <tr>
                     <td>Niveau
                         <select name="PuzzleLevel" onchange="this.form.submit()">

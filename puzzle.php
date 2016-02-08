@@ -26,7 +26,7 @@ $word_list = array(
 );
 
 //Het puzzel level
-$puzzle_level = 1;
+$puzzle_level = 1; 
 if (isset($_POST['PuzzleLevel'])) ( $puzzle_level = $_POST['PuzzleLevel']);
 
 //#####################
