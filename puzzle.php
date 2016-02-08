@@ -36,6 +36,10 @@ if (isset($_POST['PuzzleLevel'])) ( $puzzle_level = $_POST['PuzzleLevel']);
 function naarTabel($word_list) {
     foreach ($word_list as $word)
         {
+            $label_tag = '<label title="' . $word '"';
+                
+            $label_tag .= ' onclick="highlightWord(\'' . $word . '\', true);"';            
+            $label_tag .= ' onmouseover="highlightWord(\'' . $word . '\', false);" onmouseout="highlightWord(\'\', false);">';
             $label_tag = '<label title="' . $word . '" onclick="highlightWord(\'' . $word . '\', true);" onmouseover="highlightWord(\'' . $word . '\', false);" onmouseout="highlightWord(\'\', false);">';
             echo $label_tag . $word . '</label>';
         }

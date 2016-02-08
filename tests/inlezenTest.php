@@ -1,7 +1,12 @@
 <?php
 
 function inlezen($fileName ) {
-    include_once 'inlezen.php'; // has to discard fileName
+    $ruweRegels = FILE($filename);
+}
+    foreach($ruweregels as $regel) {
+//    $regel = trim($regel);
+//    wz[] = str_split(....)
+//    woorden[] = $regel;
     return array($wz, $woorden);
 }
 
