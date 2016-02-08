@@ -19,7 +19,6 @@ r--r----u---a----i--
 -----------a--regjit
 --hyena-----f-------
 
-
 bergkat
 steenbok
 everzwijn 

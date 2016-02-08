@@ -10,13 +10,23 @@
 //    woorden[] = $regel;
 //}
 
+// voorbeeld gegeven door Jacob (op ma 8-2-2016):
+//$filename = $_FILES[]['tmp_name'];
+    //include 'inlezen.php';
+    //$d = inlezen ($filename);
+    //$wz = $d[0];
+    //$woorden = $d[1]
+
+//include 'losoplevel1.php';
+//losoplevel1 ($wz, $woorden);
+
 function inlezen($fileName ) {
     $ruweRegels = FILE($filename);
 }
     foreach($ruweregels as $regel) {
         $regel = trim($regel);
-        wz[] = str_split(....);
-        woorden[] = $regel;
+        $wz[] = str_split(....);
+        $woorden[] = $regel;
     return array($wz, $woorden);
 }
 

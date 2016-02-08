@@ -19,7 +19,6 @@ t--a-----------r----
 ---------------f----
 steenbok------------
 
-
 bergkat
 steenbok
 everzwijn 
