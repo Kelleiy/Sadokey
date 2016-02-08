@@ -1,13 +1,14 @@
 <?php
+for($i = 0; $i < 20; $i++) {
+    $wz[$i]= str_split("abcdefghjklmnopqrstv");
+}
 
 define('alphabet', "abcdefghijklmnopqrstuvwxyz");
-define('puzzle_breedte', 20);
-define('puzzle_hoogte', 20);
-define('puzzle_height', puzzle_hoogte);
+define('puzzle_breedte', count($wz[0]));
+define('puzzle_height', count($wz));
 $word_list = array(
         'bergkat',
-        'steenbok',
-        'stekelvarken', 
+        'steenbok', 
         'everzwijn', 
         'giraf',
         'pauw',
@@ -22,12 +23,11 @@ $word_list = array(
         'kameel',
         'papegaai',
         'slang',
-        'salamander',
 );
 
 //Het puzzel level
 $puzzle_level = 1;
-if (isset($_REQUEST['PuzzleLevel'])) ( $puzzle_level = $_REQUEST['PuzzleLevel']); 
+if (isset($_POST['PuzzleLevel'])) ( $puzzle_level = $_POST['PuzzleLevel']);
 
 //#####################
 //##### Functions #####
@@ -36,6 +36,10 @@ if (isset($_REQUEST['PuzzleLevel'])) ( $puzzle_level = $_REQUEST['PuzzleLevel'])
 function naarTabel($word_list) {
     foreach ($word_list as $word)
         {
+            $label_tag = '<label title="' . $word '"';
+                
+            $label_tag .= ' onclick="highlightWord(\'' . $word . '\', true);"';            
+            $label_tag .= ' onmouseover="highlightWord(\'' . $word . '\', false);" onmouseout="highlightWord(\'\', false);">';
             $label_tag = '<label title="' . $word . '" onclick="highlightWord(\'' . $word . '\', true);" onmouseover="highlightWord(\'' . $word . '\', false);" onmouseout="highlightWord(\'\', false);">';
             echo $label_tag . $word . '</label>';
         }
@@ -48,7 +52,7 @@ function createPuzzle($puzzle_level, $word_list)
     $data = prepareData();
     fillRandomLetters($data);
 
-    //Vervang nulletjes met letters van de woorden, hangt af van het level
+    //Vervang "-" met letters van de woorden, hangt af van het level
     foreach ($word_list as $word)
     {
         $pos = getRandomStartPosition($word, $puzzle_level);

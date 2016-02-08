@@ -37,7 +37,7 @@ class HasOverlapTest extends PHPUnit_Framework_TestCase {
         $direction = new DIRECTION();
         $word = "abc";
 
-        $data = preparedata();
+        $data = preparedata();$data[0][5] = 'c';
         $d = hasOverlap($data, $word, new P(0, 4, DIRECTION::HORIZONTAL_REVERSED));
         $this->assertFalse($d, "4 should fit");
 
