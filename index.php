@@ -13,31 +13,8 @@
             //Het puzzel level
             $puzzle_level = 1;
             if (isset($_REQUEST['PuzzleLevel'])) ( $puzzle_level = $_REQUEST['PuzzleLevel']); 
-
-
         ?>               
-
-        ?>
-        
-        <form method="post" action="inlezen.php" enctype="multipart/form-data">  
-            <table>
-
-                <tr>
-                    <td>file upload
-                        <input id="fileupload" type="file" name="puzzel" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="submit" name="submit"  value="uploaden"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td><a id="file1" href=""> Click here for default puzzle </a></td>
-                </tr>                
-
-                <tr>
-                    <td>Niveau
+            <td>Niveau
                         <select name="PuzzleLevel" onchange="this.form.submit()">
                             <option value="1"<?php if ($puzzle_level == 1) { echo ' selected'; } ?>>1</option> <!-- Alleen horizontaal -->
                             <option value="2"<?php if ($puzzle_level == 2) { echo ' selected'; } ?>>2</option> <!-- Horizontaal reversed -->
