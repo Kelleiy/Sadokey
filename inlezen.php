@@ -20,4 +20,4 @@ function inlezen($fileName ) {
     return array($wz, $woorden);
 }
 
-?>
+?> 
