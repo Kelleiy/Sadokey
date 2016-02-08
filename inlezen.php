@@ -14,9 +14,9 @@ function inlezen($fileName ) {
     $ruweRegels = FILE($filename);
 }
     foreach($ruweregels as $regel) {
-//    $regel = trim($regel);
-//    wz[] = str_split(....)
-//    woorden[] = $regel;
+        $regel = trim($regel);
+        wz[] = str_split(....);
+        woorden[] = $regel;
     return array($wz, $woorden);
 }
 
