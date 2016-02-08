@@ -16,7 +16,7 @@
                 
             </script>
     </head>
-    <body>
+    <body> 
 <?php
 $ruweregels = FILE($_FILES['puzzel']['tmp_name']);
 createPuzzel($ruweregels);
