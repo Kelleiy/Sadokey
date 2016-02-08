@@ -31,10 +31,10 @@
     </head>
     <body>
         <form method="get">  
-            <table>
+            <table>  
                 <tr>
                     <td>Niveau
-                        <select name="PuzzleLevel" onchange="this.form.sumbit();">
+                        <select name="PuzzleLevel" onchange="this.form.submit()">
                             <option value="1"<?php if ($puzzle_level == 1) { echo ' selected'; } ?>>1</option> <!-- Alleen horizontaal -->
                             <option value="2"<?php if ($puzzle_level == 2) { echo ' selected'; } ?>>2</option> <!-- Horizontaal reversed -->
                             <option value="3"<?php if ($puzzle_level == 3) { echo ' selected'; } ?>>3</option> <!-- Verticaal -->
