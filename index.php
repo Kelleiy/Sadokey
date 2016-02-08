@@ -30,7 +30,7 @@
                             
                             $s = createPuzzle($puzzle_level, $word_list);
                             echo $s;
-                            createPuzzleTable($data);
+                            //createPuzzleTable($data);
                             //getRandomLetter();
                             //getRandomStartPosition($word, $level);
                             //hasOverlap($data, $word, $position);
