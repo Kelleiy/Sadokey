@@ -44,8 +44,10 @@
 <!--                <tr>
                     <td>
                         <?php
-                            include "puzzle.php";
+                            include "puzzelnieuw.php";
                             
+                            $s = createPuzzel($ruweregels);
+                                echo $s;
                             //$s = createPuzzle($puzzle_level, $word_list);
                             //echo $s;
                             //createPuzzleTable($data);
