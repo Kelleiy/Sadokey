@@ -20,9 +20,13 @@
 //include 'losoplevel1.php';
 //losoplevel1 ($wz, $woorden);
 
-function inlezen($fileName ) {
-    $ruweRegels = FILE($filename);
+include 'puzzelnieuw.php';
+function inlezen($filename) {
+    $ruweregels = FILE($filename);
 }
+
+inlezen($filename);
+
     foreach($ruweregels as $regel) {
         $regel = trim($regel);
         $wz[] = str_split($woorden);
