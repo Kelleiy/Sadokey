@@ -25,7 +25,7 @@ function inlezen($fileName ) {
 }
     foreach($ruweregels as $regel) {
         $regel = trim($regel);
-        $wz[] = str_split(....);
+        $wz[] = str_split($woorden);
         $woorden[] = $regel;
     return array($wz, $woorden);
 }
