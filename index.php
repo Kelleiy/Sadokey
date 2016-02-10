@@ -15,7 +15,7 @@
             if (isset($_REQUEST['PuzzleLevel'])) ( $puzzle_level = $_REQUEST['PuzzleLevel']); 
 
         ?>
-        
+        <p><h1> Woordzoeker van Sadokey</h1></p>
         <form method="post" action="inlezen.php" enctype="multipart/form-data">  
             <table>
                 <tr>

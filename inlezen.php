@@ -25,13 +25,13 @@ function inlezen($filename) {
     $ruweregels = FILE($filename);
 }
 
-inlezen($filename);
+//inlezen($filename);
 
-    foreach($ruweregels as $regel) {
-        $regel = trim($regel);
-        $wz[] = str_split($woorden);
-        $woorden[] = $regel;
-    return array($wz, $woorden);
-}
+    //foreach($ruweregels as $regel) {
+        //$regel = trim($regel);
+        //$wz[] = str_split($woorden);
+       // $woorden[] = $regel;
+   // return array($wz, $woorden);
+
 
 ?> 
