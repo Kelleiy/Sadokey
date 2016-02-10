@@ -20,8 +20,8 @@
 //include 'losoplevel1.php';
 //losoplevel1 ($wz, $woorden);
 
-function inlezen($filename ) {
-    $ruweregels = FILE($filename);
+function inlezen($fileName ) {
+    $ruweRegels = FILE($filename);
 }
     foreach($ruweregels as $regel) {
         $regel = trim($regel);
