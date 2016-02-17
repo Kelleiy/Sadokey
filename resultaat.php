@@ -40,7 +40,13 @@
 <?php
 error_reporting(E_ERROR);
 
-include 'functions.php';
+include 'Level1';
+include 'Level2';
+include 'Level3';
+include 'Level3_reverse';
+include 'Level4';
+include 'Letter.php';
+include 'FoundWord.php';
 
 switch ($level) {
     case 1:
