@@ -16,8 +16,8 @@ tijger--------------
 -----kameel---------
 --------------------
 -----------olifant--
--neushoorn----------
-------giraf---------
+mneushoorn----------
+------giraf--------D
 
 bergkat
 steenbok
