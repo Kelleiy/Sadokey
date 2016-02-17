@@ -1,10 +1,10 @@
 <?php
 
-include 'Level1';
-include 'Level2';
-include 'Level3';
-include 'Level3_reverse';
-include 'Level4';
+include 'Level1.php';
+include 'Level2.php';
+include 'Level3.php';
+include 'Level3_reverse.php';
+include 'Level4.php';
 include 'Letter.php';
 include 'FoundWord.php';
 
