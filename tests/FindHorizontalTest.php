@@ -7,7 +7,7 @@ class FindHorizontalTest extends PHPUnit_Framework_TestCase {
     //  moet op Test eindigen
 
     public function testSimpeleNaam() { // moet met test beginnen
-        $woorden[] = "aaap";
+        $woorden[] = "aap";
        // $woorden[] = str_split("pop");
 
         $letters[0] = new Letter(0,0, 'a'); //= str_split("aap");
