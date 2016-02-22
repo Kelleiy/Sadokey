@@ -55,7 +55,7 @@ function printPuzzle($wzArray, $foundWords, $woorden) {
         $c = 1;
         foreach ($row as $col) {
             echo "<td><label ";
-            // alle gevonden woorden naar individueel woord
+            // alle gevonden woorden omgezet naar individueel woord
             foreach ($foundWords as $foundWord) {
                 // letters (letterobjecten) van het woord
                 foreach ($foundWord->letters as $letter) {

@@ -36,6 +36,7 @@ function findhorizontal($woorden,$letters)
             }
         }
     }
+    // stuurt gevonden woorden (per niveau) terug
     return $foundWords;
 }
 

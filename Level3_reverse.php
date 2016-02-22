@@ -14,6 +14,7 @@ function findReverseVertical($woorden,$wzArray)
 
     foreach ($woorden as $woord) {
         unset($woordLetters);
+        // zorgt voor het omgekeerde zoeken
         $woordLetters = array_reverse(str_split($woord));
         for ($j=1;$j<$totalColumns;$j++) {
             for($i=1;$i<$totalRows;$i++){
