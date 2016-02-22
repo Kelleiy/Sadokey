@@ -38,6 +38,7 @@ foreach ($ruweregels as $regel) {
                 $c++;
             }
         }
+        
     } else {
         if ($regel != "") {
             $woorden[] = $regel;
