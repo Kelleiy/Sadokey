@@ -1,11 +1,11 @@
-tteam----d
-i-sterrenr
-j--------i
-d--b--r--e
--n-o--e--h
--e-o--t--o
--z-m--a--e
--i----e--k
+tteam-----
+i-sterren-
+j---------
+d--b--r---
+-n-o--e---
+-e-o--t---
+-z-m--a---
+-i----e---
 -e----w---
 -r----s---
 
@@ -14,6 +14,4 @@ reizen
 sterren
 sweater
 boom
-driehoek
-vrienden
 team
