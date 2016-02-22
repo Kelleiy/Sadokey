@@ -74,10 +74,12 @@ function zoekDiagonaalLBRO($word, $wzArray){
     foreach($wzArray as $i => $rij){
         foreach($rij as $j => $letter){
             if ($letter == $word[0]){
-                t = findDiagonaal($i, $j, $woorden, $wzArray);
+            $t = findDiagonaal($i, $j, $woorden, $wzArray);
+            
+                if ($t == TRUE) {
+                    return;
+                }
             }
-            if (t == TRUE)
         }
-        return;
     }
 }
