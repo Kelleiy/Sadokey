@@ -12,32 +12,32 @@
 
         ?>
         <p><h1>Woordzoeker van Sadokey</h1></p>
-    <form method="post" action="resultaat.php" enctype="multipart/form-data">  
-            <table>
-                <tr>
-                    <td>File upload
-                        <input id="fileupload" type="file" name="puzzel" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="submit" name="submit"  value="uploaden"/>
-                    </td>
-                </tr>
-                <br>
-                <tr>
-                    <td>Niveau
-                        <select name="PuzzleLevel" onchange="this.form.sumbit();">
-                            <option value="1"<?php if ($puzzle_level == 1) { echo ' selected'; } ?>>1</option> <!-- Alleen horizontaal -->
-                            <option value="2"<?php if ($puzzle_level == 2) { echo ' selected'; } ?>>2</option> <!-- Horizontaal reversed -->
-                            <option value="3"<?php if ($puzzle_level == 3) { echo ' selected'; } ?>>3</option> <!-- Verticaal -->
-                            <option value="4"<?php if ($puzzle_level == 4) { echo ' selected'; } ?>>4</option> <!-- Diagonaal -->                                                                                                                                                                                           
-                        </select>
-                    </td>
-                </tr>
+        <form method="post" action="resultaat.php" enctype="multipart/form-data">  
+                <table>
+                    <tr>
+                        <td>File upload
+                            <input id="fileupload" type="file" name="puzzel" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="submit"  value="uploaden"/>
+                        </td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>Niveau
+                            <select name="PuzzleLevel" onchange="this.form.sumbit();">
+                                <option value="1"<?php if ($puzzle_level == 1) { echo ' selected'; } ?>>1</option> <!-- Alleen horizontaal -->
+                                <option value="2"<?php if ($puzzle_level == 2) { echo ' selected'; } ?>>2</option> <!-- Horizontaal reversed -->
+                                <option value="3"<?php if ($puzzle_level == 3) { echo ' selected'; } ?>>3</option> <!-- Verticaal -->
+                                <option value="4"<?php if ($puzzle_level == 4) { echo ' selected'; } ?>>4</option> <!-- Diagonaal -->                                                                                                                                                                                           
+                            </select>
+                        </td>
+                    </tr>
 
-            </table>
-        </form>
+                </table>
+            </form>
         
     </body>
 </html>
