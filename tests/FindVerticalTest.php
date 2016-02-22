@@ -20,7 +20,7 @@ class FindVerticalTest extends PHPUnit_Framework_TestCase {
     }
 
      public function testSimpeleNaamDieNietBestaat() { // moet met test beginnen
-        $woorden[] = "pap";
+        $woorden[] = "abc";
        // $woorden[] = str_split("pop");
 
         $letters[0] = new Letter(0,0, 'p'); //= str_split("aap");
