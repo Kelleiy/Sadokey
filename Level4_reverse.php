@@ -1,27 +1,21 @@
 <?php
 
-//level 4
+//level 4 reverse
 
-function findDiagonal($words, $wz_array)
+function findReverseDiagonal($words, $wz_array)
 {
-    echo $wz_array[0][0];
-    echo $wz_array[0][1];
-    echo $wz_array[1][0];
-    echo $wz_array[1][1];
-    
-    
     $matched_words = array();
     foreach ($words as $word) 
     {
-        echo '<br/>' . $word.'<br/>';
         $letters = str_split($word);
+        $letters = array_reverse($letters);
         $matched_letters = array();
         $total_word = array();
         $first_letter = $letters[0];
         $letter_matched = false;
         
-        $row_pos = 1;
-        $column_pos = 1;
+        $row_pos = 0;
+        $column_pos = 0;
         
         foreach ($wz_array as $row)
         {
@@ -64,16 +58,18 @@ function findDiagonal($words, $wz_array)
            {
                $pos_up = $row_pos - 1;
                $pos_down = $row_pos + 1;
-           
-               if ($pos_up > 1 && $wz_array[$pos_up][$column_pos] == $letters[$letter_counter])
+               
+               if ($wz_array[$pos_up][$column_pos] == $letters[$letter_counter])
                {
                  $match_direction = -1;
                  $row_pos = $pos_up;
+                 $keep_searching = true;
                }
-               else if ($pos_down <= count($wz_array) && $wz_array[$pos_down][$column_pos] == $letters[$letter_counter])
+               else if ($wz_array[$pos_down][$column_pos] == $letters[$letter_counter])
                {
                    $match_direction = 1;
                    $row_pos = $pos_down;
+                   $keep_searching = true;
                }
                
                $letter = $wz_array[$row_pos][$column_pos];
@@ -85,17 +81,16 @@ function findDiagonal($words, $wz_array)
                 $total_word[] = $letter;
 
                 $matched_letters[] = $found_letter;
-                $keep_searching = true;
            }
            else
            {
-               echo 'Second';
-               if ($row_pos > 0 && $row_pos <= count($wz_array))
+               if ($row_pos >= 0 && $row_pos < count($wz_array))
                {
                    if ($wz_array[$row_pos][$column_pos] == $letters[$letter_counter])
                    {
                         if ($total_word == $letters)
                         {
+                            $matched_letters = array_reverse($matched_letters);
                             $matched_word = new FoundWord($word, $matched_letters);
                             $matched_words[] = $matched_word;
                         }

@@ -5,6 +5,7 @@ include 'Level2.php';
 include 'Level3.php';
 include 'Level3_reverse.php';
 include 'Level4.php';
+include 'Level4_reverse.php';
 include 'Letter.php';
 include 'FoundWord.php';
 

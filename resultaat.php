@@ -63,7 +63,15 @@ switch ($level) {
         printPuzzle($wzArray,$allFoundWords,$woorden);
         break;
     case 4:
-        echo "not implemented";
+        $foundHorizontalWords = findhorizontal($woorden,$letters, $wzArray);
+        $foundHorizontalReversedWords = findReversehorizontal($woorden,$letters, $wzArray);
+        $foundVerticalWords = findVertical($woorden,$wzArray);
+        $foundVerticalReversedWords = findReverseVertical($woorden,$wzArray);
+        $foundDiagonalWords = findDiagonal($woorden, $wzArray);
+        $foundDiagonalReversedWords = findReverseDiagonal($woorden, $wzArray);
+        echo count($foundDiagonalWords);
+        $allFoundWords = array_merge($foundHorizontalWords,$foundHorizontalReversedWords,$foundVerticalWords,$foundVerticalReversedWords, $foundDiagonalWords, $foundDiagonalReversedWords);
+        printPuzzle($wzArray,$allFoundWords,$woorden);
         break;
 }
 
