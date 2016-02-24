@@ -13,11 +13,11 @@ r--r----u---a----i--
 ----papegaai----i--h
 ------z--------f---s
 -----e--------a----u
-----b---g----n-----e
----r-----i--t------n
---a-------r---------
------------a--regjit
---hyena-----f-------
+----b---w----n-----e
+---r-----e--t------n
+--a-------z---------
+-----------e--regjit
+--hyena-----l-------
 
 bergkat
 steenbok
@@ -26,6 +26,7 @@ pauw
 neushoorn
 leeuw
 zebra
+wezel
 antilope
 panter
 tijger
