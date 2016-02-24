@@ -21,8 +21,7 @@ r--r----u---a----i--
 
 bergkat
 steenbok
-everzwijn 
-giraf
+everzwijn
 pauw
 neushoorn
 leeuw
