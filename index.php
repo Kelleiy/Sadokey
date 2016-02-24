@@ -19,11 +19,6 @@
                             <input id="fileupload" type="file" name="puzzel" />
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <input type="submit" name="submit"  value="uploaden"/>
-                        </td>
-                    </tr>
                     <br>
                     <tr>
                         <td>Niveau
@@ -35,7 +30,12 @@
                             </select>
                         </td>
                     </tr>
-
+                    <tr>
+                        <td>
+                            <input type="submit" name="submit"  value="uploaden"/>
+                        </td>
+                    </tr>
+                    
                 </table>
             </form>
         

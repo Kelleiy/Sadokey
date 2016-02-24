@@ -69,7 +69,7 @@ switch ($level) {
         $foundVerticalReversedWords = findReverseVertical($woorden,$wzArray);
         $foundDiagonalWords = findDiagonal($woorden, $wzArray);
         $foundDiagonalReversedWords = findReverseDiagonal($woorden, $wzArray);
-        echo count($foundDiagonalWords);
+        
         $allFoundWords = array_merge($foundHorizontalWords,$foundHorizontalReversedWords,$foundVerticalWords,$foundVerticalReversedWords, $foundDiagonalWords, $foundDiagonalReversedWords);
         printPuzzle($wzArray,$allFoundWords,$woorden);
         break;
