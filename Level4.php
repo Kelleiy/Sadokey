@@ -24,11 +24,11 @@ function findDiagonal($words, $wz_array)
             {
                 if ($letter == $first_letter)
                 {
-//eerst letter van het woord vinden
+                //eerst letter van het woord vinden
                     $total_word .= $letter;
                     $found_letter = new Letter($row_pos, $column_pos, $letter);   
                     $matched_letters[] = $found_letter;
-                   
+                //zet de gevonden letters bij elkaar als een match
                     $letter_matched = true;
                     break;
                 }
@@ -58,7 +58,8 @@ function findDiagonal($words, $wz_array)
            {
                $pos_up = $row_pos - 1;
                $pos_down = $row_pos + 1;
-              
+              //stappen naar recht en naar onder en boven, je staat op 0 dus
+              //een stap omhoog is -1 en omlaag is 1
                if ($pos_up > 1 && $wz_array[$pos_up][$column_pos] == $letters[$letter_counter])
                {
                  $match_direction = -1;
@@ -95,6 +96,7 @@ function findDiagonal($words, $wz_array)
                             $matched_word = new FoundWord($word, $matched_letters);
                             $matched_words[] = $matched_word;
                         }
+                    //letters in woorden en de woorden zijn "gevonden woorden"
                         else
                         {
                             $keep_searching = true;  
