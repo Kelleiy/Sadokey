@@ -19,7 +19,7 @@
                             <input id="fileupload" type="file" name="puzzel" />
                         </td>
                     </tr>
-                    <br>
+                    
                     <tr>
                         <td>Niveau
                             <select name="PuzzleLevel" onchange="this.form.sumbit();">
