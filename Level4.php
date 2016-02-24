@@ -24,7 +24,7 @@ function findDiagonal($words, $wz_array)
             {
                 if ($letter == $first_letter)
                 {
-//
+//eerst letter van het woord vinden
                     $total_word .= $letter;
                     $found_letter = new Letter($row_pos, $column_pos, $letter);   
                     $matched_letters[] = $found_letter;

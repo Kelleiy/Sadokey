@@ -13,17 +13,16 @@ r--r----u---a----i--
 ----papegaai----i--h
 ------a--------f---s
 -----k--------a----u
-----k---x----n-----e
+----k---d----n-----e
 ---o-----i--t------n
---u-------r---------
--q---------a--regjit
---hyena-----f-------
+--u-------n---------
+-q---------g--regjit
+--hyena-----o-------
 
 bergkat
 steenbok
 everzwijn
 pauw
-xiraf
 neushoorn
 leeuw
 quokka
@@ -31,7 +30,7 @@ antilope
 panter
 tijger
 hyena
-olifant
 kameel
 papegaai
 slang
+dingo
