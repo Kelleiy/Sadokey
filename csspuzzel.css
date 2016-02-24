@@ -27,11 +27,11 @@ table.puzzle label
     }
 table.puzzle label.on
     {
-        background-color: red;
+        background-color: greenyellow;
     }
 table.puzzle label.active
     {
-        background-color: grey !important;
+        background-color: magenta !important;
         color: white;
     }
 table.puzzle label.off
