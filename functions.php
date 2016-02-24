@@ -50,6 +50,7 @@ foreach ($ruweregels as $regel) {
 
 function printPuzzle($wzArray, $foundWords, $woorden) {
     $a_z = "abcdefghijklmnopqrstuvwxyz";
+    echo '<p><h2>Woordzoeker</h2></p>';
     echo "<table class='puzzle'>";
     $r = 1;
     foreach ($wzArray as $row) {
