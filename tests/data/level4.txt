@@ -11,15 +11,6 @@ r--r----u---a----i--
 ------------------oo
 -kobneets--------l-o
 ----papegaai----i--h
-<<<<<<< HEAD
-------z--------f---s
------e--------a----u
-----b---w----n-----e
----r-----e--t------n
---a-------z---------
------------e--regjit
---hyena-----l-------
-=======
 ------a--------f---s
 -----k--------a----u
 ----k---x----n-----e
@@ -27,7 +18,6 @@ r--r----u---a----i--
 --u-------r---------
 -q---------a--regjit
 --hyena-----f-------
->>>>>>> fa8846f4d71996604308aba4389688b631f7e181
 
 bergkat
 steenbok
@@ -36,12 +26,7 @@ pauw
 xiraf
 neushoorn
 leeuw
-<<<<<<< HEAD
-zebra
-wezel
-=======
 quokka
->>>>>>> fa8846f4d71996604308aba4389688b631f7e181
 antilope
 panter
 tijger
